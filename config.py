@@ -1,5 +1,5 @@
 """
-Configuration settings for the RAG system - Updated for Phase 2
+Configuration settings for the RAG system - Updated for Phase 3
 """
 import os
 
@@ -22,6 +22,11 @@ DEFAULT_TOP_K = 10  # Default number of results to return
 DEFAULT_SCORE_THRESHOLD = 0.5  # Minimum relevance score
 MAX_CONTEXT_LENGTH = 2000  # Maximum characters for context
 QUERY_TIMEOUT = 30  # Query timeout in seconds
+
+# Phase 3: LLM Configuration
+GROQ_MODEL = "meta-llama/llama-4-scout-17b-16e-instruct"
+GROQ_TEMPERATURE = 0.5
+GROQ_MAX_TOKENS = 1024
 
 # Display Configuration
 MAX_RESULT_TEXT_LENGTH = 400  # Max characters to display per result
