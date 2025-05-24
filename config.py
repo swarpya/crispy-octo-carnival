@@ -1,5 +1,5 @@
 """
-Configuration settings for the RAG system
+Configuration settings for the RAG system - Updated for Phase 2
 """
 import os
 
@@ -16,6 +16,16 @@ CHUNK_OVERLAP = 50
 # File Paths
 BOOKS_DIRECTORY = "books/"
 PROCESSED_DATA_DIR = "processed_data/"
+
+# Phase 2: Query Processing Configuration
+DEFAULT_TOP_K = 10  # Default number of results to return
+DEFAULT_SCORE_THRESHOLD = 0.5  # Minimum relevance score
+MAX_CONTEXT_LENGTH = 2000  # Maximum characters for context
+QUERY_TIMEOUT = 30  # Query timeout in seconds
+
+# Display Configuration
+MAX_RESULT_TEXT_LENGTH = 400  # Max characters to display per result
+RESULTS_PER_PAGE = 5  # Results to display per page in interactive mode
 
 # Create directories if they don't exist
 os.makedirs(BOOKS_DIRECTORY, exist_ok=True)
