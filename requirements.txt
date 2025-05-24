@@ -1,0 +1,7 @@
+qdrant-client
+sentence-transformers
+PyPDF2
+numpy
+torch
+transformers
+huggingface-hub
